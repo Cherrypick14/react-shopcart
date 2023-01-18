@@ -1,0 +1,10 @@
+.App {
+  text-align: center;
+}
+
+.App> h1{
+  text-decoration: underline;
+  font-size: larger;
+  font-family: fantasy;
+  margin-top: 8rem;
+}
