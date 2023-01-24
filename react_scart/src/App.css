@@ -2,15 +2,11 @@ body{
   margin:0;
   padding:0;
   box-sizing: border-box;
-  height:100vh;
 }
-.App {
-  text-align: center;
-}
+.App { 
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
 
-.App> h1{
-  text-decoration: underline;
-  font-size: larger;
-  font-family: fantasy;
-  margin-top: 8rem;
-}
