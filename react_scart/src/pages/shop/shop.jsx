@@ -6,7 +6,7 @@ export const Shop = () => {
       <div className="shopTitle">
         <h1>Mooney's Bookstore</h1>
       </div>
-      <div className="products">
+      <div className="books">
            
       </div>
     </div>
