@@ -1,8 +1,8 @@
 import './App.css';
 import {BrowserRouter as Router,Routes, Route } from 'react-router-dom'
 import { Navbar } from './components/navbar';
-import { Shop } from '../src/pages/shop';
-import { Cart } from '../src/pages/cart';
+import { Shop } from './pages/shop/shop';
+import { Cart } from './pages/cart/cart';
 
 function App() {
   return (
