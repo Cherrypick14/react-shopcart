@@ -1,6 +1,7 @@
 import React from 'react'
 import {BOOKS} from '../../books'
 import { Book } from './book'
+import '../../styles/shop.css'
 
 export const Shop = () => {
   return (
