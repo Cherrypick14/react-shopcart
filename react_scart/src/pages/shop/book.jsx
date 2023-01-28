@@ -13,10 +13,12 @@ export const Book = (props) => {
           <p>
             <i>{author}</i>
             </p>
-          <p>
-            <b>${price}</b>
-            </p>
+          <p> ${price}</p>
         </div>
+        <button className="addToCartBtn">
+          Add to Cart
+        </button>
+
     </div>
   )
 }
