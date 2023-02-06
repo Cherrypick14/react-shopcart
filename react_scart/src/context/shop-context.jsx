@@ -1,4 +1,3 @@
-import { Books } from 'phosphor-react';
 import React,{createContext, useState} from 'react'
 import { BOOKS } from '../../src/books';
 
@@ -17,14 +16,26 @@ const getDefaultCart =() =>{
 };
 
 export const ShopContextProvider = (props) => {
+
     const[cartItems, setCartItems] = useState(getDefaultCart())
 
     const addToCart = (itemId) =>{
+
        setCartItems((prev)=>({...prev, [itemId]: prev[itemId] + 1}))
     };
+
+    const removeFromCart = (itemId) =>{
+
+       setCartItems((prev)=>({...prev, [itemId]: prev[itemId] - 1}))
+   };
+
+   const contextValue = {cartItems,addToCart,removeFromCart};
+
   return (
 
-    <ShopContext.Provider>
+
+    <ShopContext.Provider value={contextValue}>
+
         {props.children}
 
 
