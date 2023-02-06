@@ -1,7 +1,14 @@
-import React from 'react'
+import React,{useContext}from 'react'
+
+import {ShopContext} from '../../context/shop-context'
 
 export const Book = (props) => {
+
     const {id,bookTitle,author,price,bookImage} = props.data
+
+    const {addToCart,cartItems} = useContext(ShopContext)
+
+   const  cartItemAmount = cartItems[id];
   return (
     <div className='book'>
         <img src ={bookImage} />
@@ -15,8 +22,8 @@ export const Book = (props) => {
             </p>
           <p> ${price}</p>
         </div>
-        <button className="addToCartBtn">
-          Add to Cart
+        <button className="addToCartBtn" onClick={()=> addToCart(id)}>
+          Add to Cart{cartItemAmount > 0 && <>{(cartItemAmount)}</>}
         </button>
 
     </div>
