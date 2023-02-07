@@ -1,7 +1,9 @@
-import React from 'react'
+import React,{useContext}from 'react'
 import {BOOKS} from '../../books'
+import { ShopContext } from '../../context/shop-context'
 
 export const Cart = () => {
+   const {cartItems} = useContext(ShopContext)
   return (
 
     <div className='cart'>
@@ -11,7 +13,7 @@ export const Cart = () => {
           </div>
            <div className="cartitems">
                 {BOOKS.map((book)=>
-                 {})}
+                 { })}
            </div>
     </div>
   )
