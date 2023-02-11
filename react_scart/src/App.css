@@ -2,6 +2,7 @@ body{
   margin:0;
   padding:0;
   box-sizing: border-box;
+  background:linear-gradient(to right, #6a82fb, #fc5c7d)
 }
 .App { 
     width: 100%;
